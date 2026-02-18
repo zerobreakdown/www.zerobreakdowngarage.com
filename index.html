@@ -1,157 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elias Daniel - Zero Breakdown Garage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Daniel - Zero Breakdown Garage</title>
 
-<meta name="description" content="Zero Breakdown Garage in Lebanon. Professional car repair, ECU programming, coding, transmission rebuilding and advanced diagnostics.">
+    <meta name="description" content="Zero Breakdown Garage in Lebanon. Professional car repair, ECU programming, coding, transmission rebuilding and advanced diagnostics.">
 
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 
-<!-- Google Tag Manager -->
-<script>
-(function(w,d,s,l,i){
-    w[l]=w[l]||[];
-    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-    var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-    j.async=true;
-    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-    f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','G-P40M4FX122');
-</script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','G-P40M4FX122');
+    </script>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TL8NS5QZS6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-TL8NS5QZS6');
-</script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL8NS5QZS6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TL8NS5QZS6');
+    </script>
 
-<meta name="google-site-verification" content="Llmh5yD_vYbJ6ONFcJpTEeS1VmQu-w678QBHeiD7RHI" />
+    <meta name="google-site-verification" content="Llmh5yD_vYbJ6ONFcJpTEeS1VmQu-w678QBHeiD7RHI" />
 
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    background: url("static/background.jpg") no-repeat center center fixed,
-                linear-gradient(to right, #d3d3d3 50%, #b0c4de 50%);
-    background-size: contain;
-    font-family: Arial, sans-serif;
-    overflow: auto;
-}
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("static/background.jpg") no-repeat center center fixed,
+                        linear-gradient(to right, #d3d3d3 50%, #b0c4de 50%);
+            background-size: contain;
+            font-family: Arial, sans-serif;
+            overflow: auto;
+        }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-}
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-.car-logo {
-    width: 80px;
-    height: auto;
-    opacity: 0.5;
-    position: absolute;
-    pointer-events: none;
-}
+        .car-logo {
+            width: 80px;
+            height: auto;
+            opacity: 0.5;
+            position: absolute;
+            pointer-events: none;
+        }
 
-.left { left: 10px; }
-.right { right: 10px; }
+        .left { left: 10px; }
+        .right { right: 10px; }
 
-.overlay {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 95%;
-    text-align: center;
-    border-radius: 10px;
-}
+        .overlay {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 95%;
+            text-align: center;
+            border-radius: 10px;
+        }
 
-h1 {
-    margin-top: 0;
-    animation: flash 8s linear infinite;
-}
+        h1 {
+            margin-top: 0;
+            animation: flash 8s linear infinite;
+        }
 
-p.blink {
-    color: blue;
-    animation: blink 1s infinite;
-}
+        p.blink {
+            color: blue;
+            animation: blink 1s infinite;
+        }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin: 5px;
-}
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
 
-button:hover {
-    background-color: #2980b9;
-}
+        button:hover {
+            background-color: #2980b9;
+        }
 
-@keyframes flash {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
-}
+        @keyframes flash {
+            0% {opacity: 0;}
+            50% {opacity: 1;}
+            100% {opacity: 0;}
+        }
 
-@keyframes blink {
-    0%,100% {opacity:1;}
-    50% {opacity:0;}
-}
+        @keyframes blink {
+            0%,100% {opacity:1;}
+            50% {opacity:0;}
+        }
 
-#spare-parts-section {
-    max-height: 400px;
-    overflow-y: auto;
-    margin-top: 20px;
-}
+        @media screen and (max-width: 768px) {
+            .car-logo { width: 60px; }
+        }
 
-#spare-parts-section table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-}
-
-#spare-parts-section th, #spare-parts-section td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-#spare-parts-section th {
-    background-color: #3498db;
-    color: white;
-}
-
-#spare-parts-section tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-@media screen and (max-width: 768px) {
-    .car-logo { width: 60px; }
-}
-
-@media screen and (max-width: 480px) {
-    .car-logo { width: 40px; }
-}
-</style>
+        @media screen and (max-width: 480px) {
+            .car-logo { width: 40px; }
+        }
+    </style>
 </head>
 
 <body>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=G-P40M4FX122" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+<iframe src="https://www.googletagmanager.com/ns.html?id=G-P40M4FX122"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 
 <div class="container">
@@ -191,40 +164,22 @@ button:hover {
         <div id="contact-section" style="display:none;">
             <p>Email: eliasdanielpm@hotmail.com</p>
             <p>Phone: +961-70-401652</p>
-            <p><button onclick="openGarageLocation()">Open Garage Location</button></p>
+            <p>
+                <button onclick="openGarageLocation()">Open Garage Location</button>
+            </p>
         </div>
 
-        <!-- Spare Parts Table -->
         <div id="spare-parts-section" style="display:none;">
-            <h2>Brake Pads Stock</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Sr. No</th>
-                        <th>Brand</th>
-                        <th>Part #</th>
-                        <th>Vehicle Application</th>
-                        <th>Model</th>
-                        <th>Price $</th>
-                        <th>Side</th>
-                        <th>Qty</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Frenge</td><td>D1007</td><td>AUDI Q7/PORSCHE CAYENNE</td><td>03-09</td><td>25</td><td>F</td><td>1</td></tr>
-                    <tr><td>2</td><td>Frenge</td><td>D1014</td><td>AUDI Q7/PORSCHE CAYENNE</td><td>03-07</td><td>25</td><td>F</td><td>1</td></tr>
-                    <tr><td>3</td><td>ANNAT</td><td>D725</td><td>BMW 5 SERIES</td><td>02-05</td><td>18</td><td>F</td><td>1</td></tr>
-                    <tr><td>4</td><td>ANNAT</td><td>D781</td><td>BMW 3 SERIES</td><td>01-05</td><td>18</td><td>F</td><td>1</td></tr>
-                    <tr><td>5</td><td>XYXL</td><td>D1294</td><td>BMW X5 X6</td><td>07-11</td><td>20</td><td>F</td><td>1</td></tr>
-                    <tr><td>6</td><td>CAC</td><td>D681</td><td>BMW X5 SERIE 7</td><td>02-05</td><td>25</td><td>F</td><td>1</td></tr>
-                    <tr><td>7</td><td>ULTRA PRE</td><td>D1404</td><td>CAMARO</td><td>11-15</td><td>25</td><td>F</td><td>1</td></tr>
-                    <tr><td>8</td><td>RAYBESTOS</td><td>D1337</td><td>CAMARO</td><td>11-15</td><td>20</td><td>R</td><td>1</td></tr>
-                    <tr><td>9</td><td>GLORBRAKE</td><td>D477</td><td>JEEP CHEROKEE</td><td>00-01</td><td>20</td><td>F</td><td>1</td></tr>
-                    <tr><td>10</td><td>ANNAT</td><td>D790</td><td>JEEP CHEROKEE</td><td>99-20</td><td>20</td><td>F</td><td>1</td></tr>
-                    <!-- Continue all remaining rows (11 to 53) in the same format -->
-                </tbody>
-            </table>
+            <h2>Brake Pads</h2>
+            <ul>
+                <li>BMW</li>
+                <li>Mercedes</li>
+                <li>Toyota</li>
+                <li>Honda</li>
+                <li>Hyundai</li>
+            </ul>
         </div>
+
     </div>
 </div>
 
