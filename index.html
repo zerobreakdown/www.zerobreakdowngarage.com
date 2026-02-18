@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elias Daniel - Zero Breakdown Garage</title>
+
+    <meta name="description" content="Zero Breakdown Garage in Lebanon. Professional car repair, ECU programming, coding, transmission rebuilding and advanced diagnostics.">
+
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','G-P40M4FX122');</script>
-    <!-- End Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','G-P40M4FX122');
+    </script>
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL8NS5QZS6"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-TL8NS5QZS6');
     </script>
 
-    <!-- Google Verification Code -->
     <meta name="google-site-verification" content="Llmh5yD_vYbJ6ONFcJpTEeS1VmQu-w678QBHeiD7RHI" />
 
     <style>
@@ -32,10 +38,10 @@
             margin: 0;
             padding: 0;
             background: url("static/background.jpg") no-repeat center center fixed,
-                linear-gradient(to right, #d3d3d3 50%, #b0c4de 50%);
-            background-size: contain; /* Adjusted background size */
+                        linear-gradient(to right, #d3d3d3 50%, #b0c4de 50%);
+            background-size: contain;
             font-family: Arial, sans-serif;
-            overflow: auto; /* Enable scrolling */
+            overflow: auto;
         }
 
         .container {
@@ -44,123 +50,32 @@
             padding: 20px;
         }
 
-        /* Car logos */
-        .car-logo-left,
-        .car-logo-left-2,
-        .car-logo-left-3,
-        .car-logo-left-4,
-        .car-logo-left-5,
-        .car-logo-left-6,
-        .car-logo-left-7,
-        .car-logo-right,
-        .car-logo-right-2,
-        .car-logo-right-3,
-        .car-logo-right-4,
-        .car-logo-right-5,
-        .car-logo-right-6,
-        .car-logo-right-7 {
-            width: 80px; /* Adjust the size as needed */
+        .car-logo {
+            width: 80px;
             height: auto;
-            opacity: 0.5; /* Reduced opacity for better background visibility */
+            opacity: 0.5;
             position: absolute;
             pointer-events: none;
         }
 
-        .car-logo-left {
-            top: 10px;
-            left: 10px;
-        }
-
-        .car-logo-left-2 {
-            top: 20%;
-            left: 10px;
-        }
-
-        .car-logo-left-3 {
-            top: 40%;
-            left: 10px;
-        }
-
-        .car-logo-left-4 {
-            top: 60%;
-            left: 10px;
-        }
-
-        .car-logo-left-5 {
-            top: 80%;
-            left: 10px;
-        }
-
-        .car-logo-left-6 {
-            bottom: 10px;
-            left: 10px;
-        }
-
-        .car-logo-left-7 {
-            bottom: 20%;
-            left: 10px;
-        }
-
-        .car-logo-right {
-            top: 10px;
-            right: 10px;
-        }
-
-        .car-logo-right-2 {
-            top: 20%;
-            right: 10px;
-        }
-
-        .car-logo-right-3 {
-            top: 40%;
-            right: 10px;
-        }
-
-        .car-logo-right-4 {
-            top: 60%;
-            right: 10px;
-        }
-
-        .car-logo-right-5 {
-            top: 80%;
-            right: 10px;
-        }
-
-        .car-logo-right-6 {
-            bottom: 10px;
-            right: 10px;
-        }
-
-        .car-logo-right-7 {
-            bottom: 20%;
-            right: 10px;
-        }
+        .left { left: 10px; }
+        .right { right: 10px; }
 
         .overlay {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 10px; /* Adjusted padding for mobile */
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 1;
-            max-width: 95%; /* Adjusted max-width for mobile */
+            max-width: 95%;
             text-align: center;
+            border-radius: 10px;
         }
 
         h1 {
-            white-space: nowrap;
+            margin-top: 0;
             animation: flash 8s linear infinite;
-            transform: translateX(100%);
-            margin-top: 0; /* Remove top margin for h1 */
-        }
-
-        p#garage-services {
-            margin-top: 20px;
-            animation: type 12s linear;
-            overflow: visible; /* Adjusted overflow */
-            white-space: normal; /* Adjusted white-space */
-            font-size: 14px; /* Adjusted font size for better readability on mobile */
         }
 
         p.blink {
@@ -168,68 +83,6 @@
             animation: blink 1s infinite;
         }
 
-        @keyframes flash {
-            0% {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-
-            25% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-
-            50% {
-                transform: translateX(0);
-                opacity: 0;
-            }
-
-            75% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateX(0);
-                opacity: 0;
-            }
-        }
-
-        @keyframes type {
-            0% {
-                width: 0;
-            }
-
-            100% {
-                width: 100%;
-            }
-        }
-
-        .contact-section {
-            display: flex;
-            margin-top: 20px;
-        }
-
-        .contact-section button {
-            margin: 0 10px; /* Adjust the margin as needed */
-        }
-
-        .blink {
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-        }
-
-        /* Added button styling */
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -238,155 +91,113 @@
             color: #fff;
             border: none;
             border-radius: 5px;
+            margin: 5px;
         }
 
         button:hover {
             background-color: #2980b9;
         }
 
-        /* Media Queries */
+        @keyframes flash {
+            0% {opacity: 0;}
+            50% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+
+        @keyframes blink {
+            0%,100% {opacity:1;}
+            50% {opacity:0;}
+        }
+
         @media screen and (max-width: 768px) {
-            .car-logo-left,
-            .car-logo-left-2,
-            .car-logo-left-3,
-            .car-logo-left-4,
-            .car-logo-left-5,
-            .car-logo-left-6,
-            .car-logo-left-7,
-            .car-logo-right,
-            .car-logo-right-2,
-            .car-logo-right-3,
-            .car-logo-right-4,
-            .car-logo-right-5,
-            .car-logo-right-6,
-            .car-logo-right-7 {
-                width: 60px;
-            }
+            .car-logo { width: 60px; }
         }
 
         @media screen and (max-width: 480px) {
-            .car-logo-left,
-            .car-logo-left-2,
-            .car-logo-left-3,
-            .car-logo-left-4,
-            .car-logo-left-5,
-            .car-logo-left-6,
-            .car-logo-left-7,
-            .car-logo-right,
-            .car-logo-right-2,
-            .car-logo-right-3,
-            .car-logo-right-4,
-            .car-logo-right-5,
-            .car-logo-right-6,
-            .car-logo-right-7 {
-                width: 40px;
-            }
+            .car-logo { width: 40px; }
         }
     </style>
 </head>
+
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=G-P40M4FX122" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
-    <div class="container">
-        <!-- Car logos -->
-        <img src="static/MB.jpeg" alt="Mercedes Logo" class="car-logo-left">
-        <img src="static/audi.jpg" alt="Audi Logo" class="car-logo-left-2">
-        <img src="static/range rover.png" alt="Range Rover Logo" class="car-logo-left-3">
-        <img src="static/kia logo.jpg" alt="Kia Logo" class="car-logo-left-4">
-        <img src="static/jeep.jpg" alt="Jeep Logo" class="car-logo-left-5">
-        <!-- Two new logos added -->
-        <img src="static/honda.jpg" alt="Honda Logo" class="car-logo-left-6">
-        <img src="static/crysler.jpg" alt="Ford Logo" class="car-logo-left-7">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=G-P40M4FX122"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 
-        <img src="static/bmw.jpeg" alt="BMW Logo" class="car-logo-right">
-        <img src="static/cooper logo.jpg" alt="Mini Cooper Logo" class="car-logo-right-2">
-        <img src="static/toyota logo.png" alt="Toyota Logo" class="car-logo-right-3">
-        <img src="static/hyundai logo.jpg" alt="Hyundai Logo" class="car-logo-right-4">
-        <img src="static/porsche1.jpg" alt="Infinity Logo" class="car-logo-right-5">
-        <!-- three new logos added -->
-        <img src="static/mazda1.jpg" alt="Mazda Logo" class="car-logo-right-6">
-        <img src="static/infinity.jpg" alt="Lexus Logo" class="car-logo-right-7">
+<div class="container">
 
-        <div class="overlay">
-            <h1>Welcome to Zero Breakdown Garage, Elias Daniel</h1>
-            <p id="garage-services">Repairing all kinds of vehicles, Advanced and pre-Advanced, Car Scanner, Fault Diagnosis, Coding, Programming, Engine Overhauling, Transmission Rebuilding. Injectors Cleaning...</p>
-            <p class="blink">We are here to serve you better !!!</p>
-            <p>Managed by experts</p>
-            <p>Owner: Elias Daniel</p>
+    <!-- LEFT LOGOS -->
+    <img src="static/MB.jpeg" class="car-logo left" style="top:10px;">
+    <img src="static/audi.jpg" class="car-logo left" style="top:25%;">
+    <img src="static/honda.jpg" class="car-logo left" style="top:45%;">
+    <img src="static/jeep.jpg" class="car-logo left" style="top:65%;">
+    <img src="static/kia logo.jpg" class="car-logo left" style="bottom:10px;">
 
-            <!-- Corrected ID for the contact section -->
-            <div class="contact-section">
-                <button onclick="toggleContact()">Contact Us</button>
-                <button onclick="toggleSpareParts()">Spare Parts</button>
-            </div>
-            <div id="contact-section" class="contact-section" style="display: none;">
-                <p>E-mail: eliasdanielpm@hotmail.com</p>
-                <p>Contact Number: +961-70-401652</p>
-                <!-- Added label for better accessibility -->
-                <p id="location-paragraph">Location: <button id="location-button" onclick="getLocation()">Get Location</button></p>
-            </div>
+    <!-- RIGHT LOGOS -->
+    <img src="static/bmw.jpeg" class="car-logo right" style="top:10px;">
+    <img src="static/toyota logo.png" class="car-logo right" style="top:25%;">
+    <img src="static/hyundai logo.jpg" class="car-logo right" style="top:45%;">
+    <img src="static/mazda1.jpg" class="car-logo right" style="top:65%;">
+    <img src="static/infinity.jpg" class="car-logo right" style="bottom:10px;">
 
-            <!-- Spare Parts button and section -->
+    <div class="overlay">
+        <h1>Welcome to Zero Breakdown Garage</h1>
+
+        <p>
+            Repairing all kinds of vehicles. Advanced diagnostics, ECU coding,
+            programming, engine overhauling, transmission rebuilding,
+            injector cleaning and more.
+        </p>
+
+        <p class="blink">We are here to serve you better!</p>
+
+        <p><strong>Owner:</strong> Elias Daniel</p>
+
+        <div>
+            <button onclick="toggleContact()">Contact Us</button>
             <button onclick="toggleSpareParts()">Spare Parts</button>
-
-<div id="spare-parts-section" style="display:none;">
-    <h2>Brake Pads</h2>
-    <!-- brake_pads.html -->
-</div>
-
-                    <!-- Add more parts as needed -->
-                </ul>
-            </div>
         </div>
+
+        <div id="contact-section" style="display:none;">
+            <p>Email: eliasdanielpm@hotmail.com</p>
+            <p>Phone: +961-70-401652</p>
+            <p>
+                <button onclick="openGarageLocation()">Open Garage Location</button>
+            </p>
+        </div>
+
+        <div id="spare-parts-section" style="display:none;">
+            <h2>Brake Pads</h2>
+            <ul>
+                <li>BMW</li>
+                <li>Mercedes</li>
+                <li>Toyota</li>
+                <li>Honda</li>
+                <li>Hyundai</li>
+            </ul>
+        </div>
+
     </div>
-
-    <script>
-        function toggleContact() {
-            var contactSection = document.getElementById("contact-section");
-            contactSection.style.display = (contactSection.style.display === "none") ? "block" : "none";
-        }
-
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                alert("Geolocation is not supported by this browser.");
-            }
-        }
-
-        function showPosition(position) {
-            var locationParagraph = document.getElementById("location-paragraph");
-            locationParagraph.innerHTML = "Location: Latitude " + position.coords.latitude + ", Longitude " + position.coords.longitude +
-                " <a href='https://www.google.com/maps?q=33.8966330,35.7586200' target='_blank'>Open Map</a>";
-        }
-
-        <button onclick="toggleSpareParts()">Spare Parts</button>
-<div id="spare-parts-section" style="display:none;">
-    <h2>Brake Pads</h2>
-    <!-- brake_pads.html  -->
 </div>
-  </script>
-    <!-- Default Statcounter code for garage http://www.zerobreakdowngarage.com -->
-<script type="text/javascript">
-var sc_project=12973282; 
-var sc_invisible=0; 
-var sc_security="c525c9f3"; 
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
+
+<script>
+function toggleContact() {
+    var section = document.getElementById("contact-section");
+    section.style.display = (section.style.display === "none") ? "block" : "none";
+}
+
+function toggleSpareParts() {
+    var section = document.getElementById("spare-parts-section");
+    section.style.display = (section.style.display === "none") ? "block" : "none";
+}
+
+function openGarageLocation() {
+    window.open("https://www.google.com/maps?q=33.8966330,35.7586200", "_blank");
+}
 </script>
-<noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-Statcounter" href="https://statcounter.com/" target="_blank"><img
-class="statcounter" src="https://c.statcounter.com/12973282/0/c525c9f3/0/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
+
 </body>
 </html>
-
-
-
