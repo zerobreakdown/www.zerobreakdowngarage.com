@@ -3,184 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zero Breakdown Garage - Elias Daniel</title>
+<title>Elias Daniel - Zero Breakdown Garage</title>
+
+<meta name="description" content="Zero Breakdown Garage in Lebanon. Professional car repair, ECU programming, coding, transmission rebuilding and advanced diagnostics.">
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','G-P40M4FX122');
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TL8NS5QZS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TL8NS5QZS6');
+</script>
+
+<meta name="google-site-verification" content="Llmh5yD_vYbJ6ONFcJpTEeS1VmQu-w678QBHeiD7RHI" />
 
 <style>
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background: url("static/background.jpg") no-repeat center center fixed;
-    background-size: cover;
-    color: #000;
+    background: linear-gradient(to right, #d3d3d3 50%, #b0c4de 50%), url("static/background.jpg") no-repeat center center fixed;
+    background-size: cover; /* FIXED */
+    overflow: auto;
 }
 
-/* Container */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
 }
 
-/* Welcome Section */
-#welcome {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 10px;
+.car-logo {
+    width: 80px;
+    height: auto;
+    opacity: 0.5;
+    position: absolute;
+    pointer-events: none;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+.overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 0 auto; /* CENTER */
+    max-width: 95%;
     text-align: center;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative; /* CHANGE: relative instead of absolute */
 }
 
-#welcome h1 { margin-top:0; }
-.blink { color: blue; animation: blink 1s infinite; }
-@keyframes blink {0%,100%{opacity:1;}50%{opacity:0;}}
+h1 { margin-top:0; animation: flash 8s linear infinite; }
 
-/* Buttons */
-.buttons { text-align: center; margin: 20px 0; }
+p.blink { color: blue; animation: blink 1s infinite; }
+
 button {
     padding: 10px 20px;
-    margin: 5px;
     font-size: 16px;
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
     background-color: #3498db;
     color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
 }
+
 button:hover { background-color: #2980b9; }
 
-/* Sections */
-.section {
-    display: none;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    max-height: 500px;
+#spare-parts-section {
+    max-height: 400px;
     overflow-y: auto;
+    margin-top: 20px;
 }
 
-/* Spare Parts Table */
-table {
+#spare-parts-section table {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
 }
-th, td {
+
+#spare-parts-section th, #spare-parts-section td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
 }
-th { background-color: #3498db; color: #fff; }
-tr:nth-child(even) { background-color: #f2f2f2; }
 
-@media screen and (max-width:768px){ table, th, td{ font-size:12px; } }
+#spare-parts-section th { background-color: #3498db; color: white; }
+#spare-parts-section tbody tr:nth-child(even) { background-color: #f2f2f2; }
+
+@media screen and (max-width: 768px) { .car-logo { width: 60px; } }
+@media screen and (max-width: 480px) { .car-logo { width: 40px; } }
+
+@keyframes flash { 0%{opacity:0;} 50%{opacity:1;} 100%{opacity:0;} }
+@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
 </style>
 </head>
+
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=G-P40M4FX122" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 
 <div class="container">
 
-    <!-- Welcome Section -->
-    <div id="welcome">
+    <!-- LEFT LOGOS -->
+    <img src="static/MB.jpeg" class="car-logo left" style="top:10px;">
+    <img src="static/audi.jpg" class="car-logo left" style="top:25%;">
+    <img src="static/honda.jpg" class="car-logo left" style="top:45%;">
+    <img src="static/jeep.jpg" class="car-logo left" style="top:65%;">
+    <img src="static/kia logo.jpg" class="car-logo left" style="bottom:10px;">
+
+    <!-- RIGHT LOGOS -->
+    <img src="static/bmw.jpeg" class="car-logo right" style="top:10px;">
+    <img src="static/toyota logo.png" class="car-logo right" style="top:25%;">
+    <img src="static/hyundai logo.jpg" class="car-logo right" style="top:45%;">
+    <img src="static/mazda1.jpg" class="car-logo right" style="top:65%;">
+    <img src="static/infinity.jpg" class="car-logo right" style="bottom:10px;">
+
+    <div class="overlay">
         <h1>Welcome to Zero Breakdown Garage</h1>
-        <p>Repairing all kinds of vehicles. Advanced diagnostics, ECU coding, programming, engine overhauling, transmission rebuilding, injector cleaning and more.</p>
+
+        <p>
+            Repairing all kinds of vehicles. Advanced diagnostics, ECU coding,
+            programming, engine overhauling, transmission rebuilding,
+            injector cleaning and more.
+        </p>
+
         <p class="blink">We are here to serve you better!</p>
+
         <p><strong>Owner:</strong> Elias Daniel</p>
-    </div>
 
-    <!-- Buttons -->
-    <div class="buttons">
-        <button onclick="toggleSection('contact')">Contact Us</button>
-        <button onclick="toggleSection('spare')">Spare Parts</button>
-    </div>
+        <div>
+            <button onclick="toggleContact()">Contact Us</button>
+            <button onclick="toggleSpareParts()">Spare Parts</button>
+        </div>
 
-    <!-- Contact Section -->
-    <div id="contact" class="section">
-        <p>Email: eliasdanielpm@hotmail.com</p>
-        <p>Phone: +961-70-401652</p>
-        <p><button onclick="window.open('https://www.google.com/maps?q=33.8966330,35.7586200','_blank')">Open Garage Location</button></p>
-    </div>
+        <div id="contact-section" style="display:none;">
+            <p>Email: eliasdanielpm@hotmail.com</p>
+            <p>Phone: +961-70-401652</p>
+            <p><button onclick="openGarageLocation()">Open Garage Location</button></p>
+        </div>
 
-    <!-- Spare Parts Section -->
-    <div id="spare" class="section">
-        <h2>Brake Pads Stock</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Sr. No</th>
-                    <th>Brand</th>
-                    <th>Part #</th>
-                    <th>Vehicle Application</th>
-                    <th>Model</th>
-                    <th>Price $</th>
-                    <th>Side</th>
-                    <th>Qty</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>1</td><td>Frenge</td><td>D1007</td><td>AUDI Q7/PORSCHE CAYENNE</td><td>03-09</td><td>25</td><td>F</td><td>1</td></tr>
-                <tr><td>2</td><td>Frenge</td><td>D1014</td><td>AUDI Q7/PORSCHE CAYENNE</td><td>03-07</td><td>25</td><td>F</td><td>1</td></tr>
-                <tr><td>3</td><td>ANNAT</td><td>D725</td><td>BMW 5 SERIES</td><td>02-05</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>4</td><td>ANNAT</td><td>D781</td><td>BMW 3 SERIES</td><td>01-05</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>5</td><td>XYXL</td><td>D1294</td><td>BMW X5 X6</td><td>07-11</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>6</td><td>CAC</td><td>D681</td><td>BMW X5 SERIE 7</td><td>02-05</td><td>25</td><td>F</td><td>1</td></tr>
-                <tr><td>7</td><td>ULTRA PRE</td><td>D1404</td><td>CAMARO</td><td>11-15</td><td>25</td><td>F</td><td>1</td></tr>
-                <tr><td>8</td><td>RAYBESTOS</td><td>D1337</td><td>CAMARO</td><td>11-15</td><td>20</td><td>R</td><td>1</td></tr>
-                <tr><td>9</td><td>GLORBRAKE</td><td>D477</td><td>JEEP CHEROKEE</td><td>00-01</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>10</td><td>ANNAT</td><td>D790</td><td>JEEP CHEROKEE</td><td>99-20</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>11</td><td>ANNAT</td><td>D1080</td><td>JEEP CHEROKEE</td><td>05-09</td><td>25</td><td>F</td><td>1</td></tr>
-                <tr><td>12</td><td>ANNAT</td><td>D1041</td><td>JEEP CHEROKEE</td><td>05-09</td><td>20</td><td>R</td><td>1</td></tr>
-                <tr><td>13</td><td>ULTRA</td><td>D1455</td><td>JEEP CHEROKEE</td><td>12-16</td><td>30</td><td>F</td><td>1</td></tr>
-                <tr><td>14</td><td>ULTRA</td><td>D856</td><td>JEEP LIBERTY</td><td>01-03</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>15</td><td>FRENGE</td><td>D1213</td><td>CITROEN C4 /PEUGOT 207,206</td><td>06-10</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>16</td><td>UNIPAD</td><td>D1421</td><td>GMC TERRAIN/OPEL</td><td>12-16</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>17</td><td>ET</td><td>D768</td><td>GOLF 4</td><td>00-02</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>18</td><td>ANNAT</td><td>D914</td><td>HONDA CRV / ACCORD</td><td>00-04</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>19</td><td>AMICO</td><td>D787</td><td>HONDA ACCORD</td><td>06-09</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>20</td><td>ANNAT</td><td>D1235/SP1719</td><td>HYUNDAI I10</td><td>10-15</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>21</td><td>ANNAT</td><td>D1601/SP1172</td><td>HYUNDAI I10/KIA PICANTO</td><td>14-16</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>22</td><td>GLORE</td><td>D1543</td><td>KIA RIO</td><td>17-20</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>23</td><td>ANNAT</td><td>SP1405</td><td>KIA PICANTO</td><td>11-17</td><td>16</td><td>F</td><td>1</td></tr>
-                <tr><td>24</td><td>PROMAX</td><td>D1295</td><td>KIA SPORTAGE</td><td>10-12</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>25</td><td>ULTRA</td><td>IMD872</td><td>MERCEDES C230 KOMP</td><td>00-03</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>26</td><td>GLORE</td><td>D1342</td><td>MERCEDES W204</td><td>06-08</td><td>25</td><td>F</td><td>1</td></tr>
-                <tr><td>27</td><td>ZAK</td><td>D1340</td><td>MERCEDES E250/C180</td><td>05-06</td><td>25</td><td>F</td><td>1</td></tr>
-                <tr><td>28</td><td>ULTRA</td><td>IMD31</td><td>MERCEDES 230</td><td>80-82</td><td>15</td><td>R</td><td>1</td></tr>
-                <tr><td>29</td><td>ULTRA</td><td>D145</td><td>MERCEDES 230</td><td>80-82</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>30</td><td>NYORK</td><td>D1204</td><td>MINI COOPER COUNTRY MAN</td><td>10-11</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>31</td><td>VISSAV</td><td>D691</td><td>NISSAN PATHFINDER /INFINITY</td><td>00-01</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>32</td><td>ANNAT</td><td>D1345</td><td>NISSAN TIDA /VERSA</td><td>04-06</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>33</td><td>SUNTEK</td><td>D440/SP1047</td><td>NISSAN VERSA</td><td>08-10</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>34</td><td>AIMCO</td><td>D1736</td><td>NISSAN Q5 /XTRAIL/TRAILBLAZER</td><td>13-17</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>35</td><td>FRENGE</td><td>D1737</td><td>QUASHQAI /XTRAIL</td><td>13-17</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>36</td><td>XYXL</td><td>D969</td><td>NISSAN MURANO</td><td>04-06</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>37</td><td>ANNAT</td><td>D3170/D1852</td><td>NISSAN ,YARIS</td><td>16-20</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>38</td><td>ANNAT</td><td>D1592</td><td>NISSAN VERSA</td><td>16-20</td><td>15</td><td>F</td><td>1</td></tr>
-                <tr><td>39</td><td>ANNAT</td><td>D430/D1110/D653</td><td>NISSAN SANTRA</td><td>16-20</td><td>15</td><td>F</td><td>1</td></tr>
-                <tr><td>40</td><td>ANNAT</td><td>D1193</td><td>NISSAN SUNNY</td><td>02-05</td><td>15</td><td>F</td><td>1</td></tr>
-                <tr><td>41</td><td>ANNAT</td><td>D1435/D1435</td><td>NISSAN MICRA OLD VERSA</td><td>06-09</td><td>15</td><td>F</td><td>1</td></tr>
-                <tr><td>42</td><td>FRENGE</td><td>D1541</td><td>PEUGOT 207</td><td>06-09</td><td>18</td><td>F</td><td>1</td></tr>
-                <tr><td>43</td><td>AIMCO</td><td>D1263</td><td>RANGE ROVER SUPERCHARGE /VW TOUREG</td><td>07-09</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>44</td><td>FRENGE</td><td>D1306</td><td>RANGE ROVER EVOQUE/PEUGOT</td><td>03-05</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>45</td><td>MAXISTOP</td><td>D2045</td><td>SUBARU OUTBACK</td><td>17-20</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>46</td><td>ULTRA</td><td>D1999</td><td>SUBARU IMPRESA</td><td>00-05</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>47</td><td>ULTRA</td><td>D770</td><td>SUBARU OUTBACK</td><td>05-09</td><td>20</td><td>R</td><td>1</td></tr>
-                <tr><td>48</td><td>ULTRA</td><td>D721</td><td>SUBARU OUTBACK</td><td>05-09</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>49</td><td>GLORE</td><td>D976</td><td>TOYOTA TACOMA /LAND CRUISER</td><td>03-07</td><td>25</td><td>F</td><td>1</td></tr>
-                <tr><td>50</td><td>GLORBRAKE</td><td>D862</td><td>TOYOTA RAV4</td><td>00-05</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>51</td><td>ANNAT</td><td>D1211</td><td>TOYOTA RAV 4</td><td>10-15</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>52</td><td>ANNAT</td><td>D2252</td><td>TOYOTA YARIS</td><td>06-10</td><td>20</td><td>F</td><td>1</td></tr>
-                <tr><td>53</td><td>PREMIUM</td><td>D1950</td><td>TOYOTA YARIS</td><td>12-16</td><td>20</td><td>F</td><td>1</td></tr>
-            </tbody>
-        </table>
+        <!-- Spare Parts Table -->
+        <div id="spare-parts-section" style="display:none;">
+            <h2>Brake Pads Stock</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>Brand</th>
+                        <th>Part #</th>
+                        <th>Vehicle Application</th>
+                        <th>Model</th>
+                        <th>Price $</th>
+                        <th>Side</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Frenge</td><td>D1007</td><td>AUDI Q7/PORSCHE CAYENNE</td><td>03-09</td><td>25</td><td>F</td><td>1</td></tr>
+                    <tr><td>2</td><td>Frenge</td><td>D1014</td><td>AUDI Q7/PORSCHE CAYENNE</td><td>03-07</td><td>25</td><td>F</td><td>1</td></tr>
+                    <tr><td>3</td><td>ANNAT</td><td>D725</td><td>BMW 5 SERIES</td><td>02-05</td><td>18</td><td>F</td><td>1</td></tr>
+                    <tr><td>4</td><td>ANNAT</td><td>D781</td><td>BMW 3 SERIES</td><td>01-05</td><td>18</td><td>F</td><td>1</td></tr>
+                    <tr><td>5</td><td>XYXL</td><td>D1294</td><td>BMW X5 X6</td><td>07-11</td><td>20</td><td>F</td><td>1</td></tr>
+                    <tr><td>6</td><td>CAC</td><td>D681</td><td>BMW X5 SERIE 7</td><td>02-05</td><td>25</td><td>F</td><td>1</td></tr>
+                    <tr><td>7</td><td>ULTRA PRE</td><td>D1404</td><td>CAMARO</td><td>11-15</td><td>25</td><td>F</td><td>1</td></tr>
+                    <tr><td>8</td><td>RAYBESTOS</td><td>D1337</td><td>CAMARO</td><td>11-15</td><td>20</td><td>R</td><td>1</td></tr>
+                    <tr><td>9</td><td>GLORBRAKE</td><td>D477</td><td>JEEP CHEROKEE</td><td>00-01</td><td>20</td><td>F</td><td>1</td></tr>
+                    <tr><td>10</td><td>ANNAT</td><td>D790</td><td>JEEP CHEROKEE</td><td>99-20</td><td>20</td><td>F</td><td>1</td></tr>
+                    <!-- Add all remaining rows (11-53) in the same format -->
+                </tbody>
+            </table>
+        </div>
     </div>
-
 </div>
 
 <script>
-function toggleSection(id){
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === 'none' ? 'block' : 'none';
+function toggleContact() {
+    var section = document.getElementById("contact-section");
+    section.style.display = (section.style.display === "none") ? "block" : "none";
+}
+
+function toggleSpareParts() {
+    var section = document.getElementById("spare-parts-section");
+    section.style.display = (section.style.display === "none") ? "block" : "none";
+}
+
+function openGarageLocation() {
+    window.open("https://www.google.com/maps?q=33.8966330,35.7586200", "_blank");
 }
 </script>
 
